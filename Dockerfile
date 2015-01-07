@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root
 RUN apt-get update -y
 RUN apt-get install -y build-essential
-RUN apt-get install byacc flex
+RUN apt-get install -y byacc flex
 # setup our Ubuntu sources (ADD breaks caching)
 RUN echo "deb http://tw.archive.ubuntu.com/ubuntu/ trusty main\n\
 deb http://tw.archive.ubuntu.com/ubuntu/ trusty multiverse\n\
